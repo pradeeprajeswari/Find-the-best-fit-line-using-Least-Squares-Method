@@ -36,18 +36,20 @@ for i in range(len(X)):
     denom+=(X[i]-X_mean)**2
 m=num/denom
 b=Y_mean-m*X_mean
-print(m,b)
+print("Slope:",m)
+print("Y_Intercept:",b)
 y_predicted=m*X+b
-print(y_predicted)
+print("Y_Predicted:",y_predicted)
 
 plt.scatter(X,Y)
 plt.plot(X,y_predicted,color='red')
 plt.show()
+
 ```
 
 
 ## Output:
-![ml](https://github.com/user-attachments/assets/3aa98b1a-e6da-47da-89d6-6177f4b89ae5)
+![Screenshot 2024-10-04 114807](https://github.com/user-attachments/assets/9ad6705c-24d8-435e-a683-cc3345c1ccbf)
 
 
 ## Result:
